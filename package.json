@@ -21,6 +21,8 @@
     "dependencies": {
         "@elizaos/core": "0.1.7",
         "axios": "^1.7.9",
+        "google-auth-library": "^9.15.0",
+        "open": "^10.1.0",
         "zod": "3.23.8"
     },
     "devDependencies": {

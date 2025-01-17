@@ -12,12 +12,14 @@ export default defineConfig({
     minify: false,
     external: [
         "axios",
+        "google-auth-library",
+        "open",
     ],
     platform: "node",
-    target: "node18",
+    target: "node23",
     esbuildOptions(options) {
         options.bundle = true;
         options.platform = "node";
-        options.target = "node18";
+        options.target = "node23";
     },
 });

@@ -20,10 +20,19 @@ npm install elizaos-okto-plugin
 The plugin requires several environment variables to be set:
 
 ```env
-OKTO_API_KEY=
-OKTO_BUILD_TYPE=STAGING
-OKTO_GOOGLE_ID_TOKEN=
+OKTO_API_KEY=                   # Get from https://dashboard.okto.tech/home
+OKTO_BUILD_TYPE=SANDBOX         # SANDBOX, STAGING, PRODUCTION
+GOOGLE_CLIENT_SECRET=           # Get from https://console.cloud.google.com/
+GOOGLE_CLIENT_ID=               # Get from https://console.cloud.google.com/
 ```
+
+## Setup Google OAuth
+
+1. Go to https://console.cloud.google.com/
+2. Create a new project
+3. Create Oauth credentials
+4. Get the client id and secret
+5. Set the redirect url to http://localhost:5000
 
 ## Usage
 

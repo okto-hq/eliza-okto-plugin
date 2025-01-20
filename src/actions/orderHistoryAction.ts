@@ -1,7 +1,7 @@
 import { Action, elizaLogger, HandlerCallback, IAgentRuntime, Memory, State } from "@elizaos/core";
-import { handleApiError, validateSearchQuery } from ".././utils.ts";
+import { handleApiError, validateSearchQuery } from "../utils.ts";
 import { OktoSDKPlugin } from "../index.ts";
-import { OrderData, PortfolioData } from ".././types.ts";
+import { OrderData } from "../types.ts";
 
 function prettyPrintOrderHistory(orders: OrderData) : string {
     if (!orders || orders.jobs.length === 0) {
